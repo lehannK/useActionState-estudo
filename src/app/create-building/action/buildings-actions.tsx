@@ -10,8 +10,7 @@ export default async function createNewBuilding(
   const isLocalOperation = formData.get("isLocalOperation");
   const email = formData.get("email");
 
-  const token =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiZW1haWwiOiJsZWFuZHJvLm1hcnRpbnNAY29tcGFzc3MuY29tLmJyIiwiZmlyc3ROYW1lIjoiTGVhbmRybyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc0NzcwMDQ3NiwiZXhwIjoxNzQ4MzA1Mjc2fQ.1xtaWcCCwSZ115ZqUBBBP9Mai2T08Tfs52zDg1PzAto";
+  const token = "token-exemplo";
 
   const res = await fetch(`http://localhost:3010/api/building-new`, {
     headers: {
